@@ -443,5 +443,7 @@ public class CalculadoraEstadisticas
 
 		return nombres;
 	}
+	
+	
 
 }

@@ -36,7 +36,7 @@ public class Atleta
 	/**
 	 * El país al que representa el atleta
 	 */
-	private Pais pais;
+	public Pais pais;
 
 	// ************************************************************************
 	// Constructores
