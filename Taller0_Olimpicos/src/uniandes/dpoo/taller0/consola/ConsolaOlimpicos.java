@@ -10,6 +10,7 @@ import java.util.Map;
 
 import uniandes.dpoo.taller0.modelo.Atleta;
 import uniandes.dpoo.taller0.modelo.Genero;
+import uniandes.dpoo.taller0.modelo.Pais;
 import uniandes.dpoo.taller0.procesamiento.CalculadoraEstadisticas;
 import uniandes.dpoo.taller0.procesamiento.LoaderOlimpicos;
 
@@ -374,7 +375,7 @@ public class ConsolaOlimpicos
 		System.out.println("\n" + "País de el atleta" + "\n");
 		
 		String atleta = input("Por favor ingrese el nombre de un atleta");
-		List<Map<String, Object>> pais = calculadora.paisporAtleta(atleta);
+		Pais pais = calculadora.paisporAtleta(atleta);
 		System.out.println("El país del atleta " + atleta + " es " + pais);
 	}
 

@@ -444,6 +444,22 @@ public class CalculadoraEstadisticas
 		return nombres;
 	}
 	
+	/**
+	 * Busca el país que representa el atleta
+	 * 
+	 * @return pais
+	 */
+	public Pais paisporAtleta(String atleta)
+	{
+		Pais elpais = null;
+		for (int i = 0; i < atletas.size() && elpais == null; i++)
+		{
+			if (atletas.get(i).darNombre().equals(atleta))
+				elpais = paises.get(i);
+		}
+
+		return elpais;
+	}
 	
 
 }
